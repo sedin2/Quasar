@@ -15,6 +15,10 @@ const routes = [
         path: 'color',
         component: () => import('src/pages/ColorView.vue'),
       },
+      {
+        path: 'space',
+        component: () => import('src/pages/SpaceView.vue'),
+      },
     ],
   },
   {

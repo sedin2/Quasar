@@ -50,6 +50,12 @@ const linksList = [
     to: '/color',
   },
   {
+    title: 'Space',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/space',
+  },
+  {
     title: 'Github',
     caption: 'github.com/quasarframework',
     icon: 'code',
