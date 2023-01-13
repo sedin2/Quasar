@@ -19,6 +19,10 @@ const routes = [
         path: 'space',
         component: () => import('src/pages/SpaceView.vue'),
       },
+      {
+        path: 'breakpoint',
+        component: () => import('src/pages/BreakPointView.vue'),
+      },
     ],
   },
   {
