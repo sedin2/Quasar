@@ -6,8 +6,14 @@ const routes = [
       {
         path: '',
         component: () => import('pages/IndexPage.vue'),
+      },
+      {
         path: 'typography',
-        component: () => import('src/pages/TypographyComponent.vue'),
+        component: () => import('src/pages/TypographyView.vue'),
+      },
+      {
+        path: 'color',
+        component: () => import('src/pages/ColorView.vue'),
       },
     ],
   },

@@ -64,6 +64,15 @@
         industry.
       </p>
     </section>
+    <section>
+      <div v-if="$q.platform.is.ios">Gets rendered only on iOS platform.</div>
+      <div v-if="$q.platform.is.android">
+        Gets rendered only on Android platform.
+      </div>
+      <div v-if="$q.platform.is.chrome">
+        Gets rendered only on Chrome platform.
+      </div>
+    </section>
   </q-page>
 </template>
 

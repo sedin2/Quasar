@@ -44,6 +44,12 @@ const linksList = [
     to: '/typography',
   },
   {
+    title: 'Color',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/color',
+  },
+  {
     title: 'Github',
     caption: 'github.com/quasarframework',
     icon: 'code',
