@@ -1,30 +1,57 @@
 <template>
   <q-page padding>
-    <section class="bg-red row">
-      <div class="bg-primary">
-        <q-avatar size="150px">
+    <section class="row q-col-gutter-x-xl q-py-lg">
+      <div class="col-12 col-sm-auto q-py-md flex flex-center">
+        <q-avatar size="100px">
           <q-img src="/favicon.ico" />
         </q-avatar>
       </div>
-      <div class="bg-secondary">
-        프로필 정보
-        <div class="bg-red">
-          <span>sedin_2</span>
-          <q-btn label="프로필 편집" />
-          <q-btn label="설정 버튼" />
+      <div class="col-12 col-sm-grow column justify-between">
+        <div class="row items-center">
+          <span class="text-h6 text-weight-bold">sedin_2</span>
+          <q-space />
+          <div class="q-gutter-x-sm">
+            <q-btn outline color="secondary" label="프로필 편집" />
+            <q-btn flat color="secondary" icon="more_horiz" />
+          </div>
         </div>
-        <div class="bg-green">
+        <div class="q-gutter-x-lg">
           <span>게시물 0</span>
           <span>팔로워 53</span>
           <span>팔로우 76</span>
         </div>
-        <div class="bg-blue">
+        <div>
           <div>SEJIN</div>
         </div>
       </div>
     </section>
-    <section class="bg-yellow"></section>
-    <section class="bg-green"></section>
+    <section>
+      <div class="row no-wrap scroll q-col-gutter-x-xl">
+        <div class="col-auto" v-for="n in 15" :key="n">
+          <article>
+            <q-avatar size="70px">
+              <q-img src="/favicon.ico" />
+            </q-avatar>
+            <div class="text-center q-mt-sm">제목</div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="q-my-xl">
+      <div class="row q-col-gutter-md">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="n in 16" :key="n">
+          <q-card class="my-card">
+            <q-img ratio="1" src="https://cdn.quasar.dev/img/parallax2.jpg">
+              <div
+                class="absolute-bottom text-subtitle2 flex flex-center full-height"
+              >
+                Title
+              </div>
+            </q-img>
+          </q-card>
+        </div>
+      </div>
+    </section>
   </q-page>
 </template>
 
