@@ -38,14 +38,12 @@ const routes = [
     ],
   },
   {
-    path: '/',
+    path: '/sub',
     component: () => import('layouts/SubLayout.vue'),
     children: [
-      {
-        path: '', component: () => import('pages/sub/IndexPage.vue'),
-        path: 'sub-page-1', component: () => import('pages/sub/SubPage1.vue'),
-        path: 'sub-page-2', component: () => import('pages/sub/SubPage2.vue'),
-      },
+      { path: '', component: () => import('pages/sub/IndexPage.vue') },
+      { path: 'sub-page-1', component: () => import('src/pages/sub/SubPage1.vue') },
+      { path: 'sub-page-2', component: () => import('pages/sub/SubPage2.vue') },
     ]
   },
   {
