@@ -38,6 +38,17 @@
       </div>
     </section>
     <section class="q-my-xl">
+      <q-tabs
+      class=""
+        v-model="tab"
+        inline-label
+        switch-indicator
+        indicator-color="primary"
+      >
+        <q-tab name="mails" icon="mail" label="Mails" />
+        <q-tab name="alarms" icon="alarm" label="Alarms" />
+        <q-tab name="movies" icon="movie" label="Movies" />
+      </q-tabs>
       <div class="row q-col-gutter-md">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="n in 16" :key="n">
           <q-card class="my-card">
@@ -55,7 +66,11 @@
   </q-page>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+const tab = ref('mails');
+</script>
 
 <style lang="scss" scoped>
 .q-page {
