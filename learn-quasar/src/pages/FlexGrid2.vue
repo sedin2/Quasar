@@ -39,7 +39,7 @@
     </section>
     <section class="q-my-xl">
       <q-tabs
-      class=""
+      class="q-mb-lg"
         v-model="tab"
         inline-label
         switch-indicator
