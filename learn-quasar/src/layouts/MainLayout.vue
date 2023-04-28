@@ -94,10 +94,10 @@ const linksList = [
     to: '/flex-grid-1',
   },
   {
-    title: 'Flex Grid 2',
+    title: 'Profile',
     caption: 'quasar.dev',
     icon: 'school',
-    to: '/flex-grid-2',
+    to: '/profile',
   },
 ];
 </script>

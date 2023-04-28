@@ -45,23 +45,29 @@
         switch-indicator
         indicator-color="primary"
       >
-        <q-tab name="mails" icon="mail" label="Mails" />
-        <q-tab name="alarms" icon="alarm" label="Alarms" />
-        <q-tab name="movies" icon="movie" label="Movies" />
+        <!-- <q-tab name="mails" icon="mail" label="게시글" /> -->
+        <!-- <q-tab name="alarms" icon="alarm" label="저장됨" /> -->
+        <!-- <q-tab name="movies" icon="movie" label="태그됨" /> -->
+        <q-route-tab
+          icon="mail"
+          label="게시글"
+          to="/profile"
+          exact
+        />
+        <q-route-tab
+          icon="mail"
+          label="저장됨"
+          to="/profile/saved"
+          exact
+        />
+        <q-route-tab
+          icon="mail"
+          label="태그됨"
+          to="/profile/tagged"
+          exact
+        />
       </q-tabs>
-      <div class="row q-col-gutter-md">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="n in 16" :key="n">
-          <q-card class="my-card">
-            <q-img ratio="1" src="https://cdn.quasar.dev/img/parallax2.jpg">
-              <div
-                class="absolute-bottom text-subtitle2 flex flex-center full-height"
-              >
-                Title
-              </div>
-            </q-img>
-          </q-card>
-        </div>
-      </div>
+      <router-view></router-view>
     </section>
   </q-page>
 </template>
