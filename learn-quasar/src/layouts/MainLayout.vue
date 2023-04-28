@@ -29,6 +29,11 @@
           />
           <!-- <q-btn flat round dense icon="light_mode" /> -->
         </div>
+        <q-btn round size="sm" class="q-ml-md" to="/profile">
+          <q-avatar size="42px">
+            <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+          </q-avatar>
+        </q-btn>
       </q-toolbar>
     </q-header>
 
@@ -93,12 +98,12 @@ const linksList = [
     icon: 'school',
     to: '/flex-grid-1',
   },
-  {
-    title: 'Profile',
-    caption: 'quasar.dev',
-    icon: 'school',
-    to: '/profile',
-  },
+  // {
+  //   title: 'Profile',
+  //   caption: 'quasar.dev',
+  //   icon: 'school',
+  //   to: '/profile',
+  // },
 ];
 </script>
 

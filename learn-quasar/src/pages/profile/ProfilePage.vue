@@ -49,19 +49,22 @@
         <!-- <q-tab name="alarms" icon="alarm" label="저장됨" /> -->
         <!-- <q-tab name="movies" icon="movie" label="태그됨" /> -->
         <q-route-tab
-          icon="mail"
+          :ripple="false"
+          icon="edit"
           label="게시글"
           to="/profile"
           exact
         />
         <q-route-tab
-          icon="mail"
+          :ripple="false"
+          icon="bookmark_border"
           label="저장됨"
           to="/profile/saved"
           exact
         />
         <q-route-tab
-          icon="mail"
+          :ripple="false"
+          icon="local_offer"
           label="태그됨"
           to="/profile/tagged"
           exact

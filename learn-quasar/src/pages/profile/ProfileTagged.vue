@@ -10,7 +10,7 @@
                 </q-card-section>
 
                 <q-card-section class="q-pt-none">
-                    {{ lorem }}
+                    Tag
                 </q-card-section>
             </q-card>
         </div>
