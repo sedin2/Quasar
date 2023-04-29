@@ -97,13 +97,7 @@ const linksList = [
     caption: 'quasar.dev',
     icon: 'school',
     to: '/flex-grid-1',
-  },
-  // {
-  //   title: 'Profile',
-  //   caption: 'quasar.dev',
-  //   icon: 'school',
-  //   to: '/profile',
-  // },
+  }
 ];
 </script>
 
