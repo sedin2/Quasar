@@ -47,8 +47,16 @@ const routes = [
     component: () => import('layouts/SubLayout.vue'),
     children: [
       { path: '', component: () => import('pages/sub/IndexPage.vue') },
-      { path: 'sub-page-1', component: () => import('src/pages/sub/SubPage1.vue') },
+      { path: 'sub-page-1', component: () => import('pages/sub/SubPage1.vue') },
       { path: 'sub-page-2', component: () => import('pages/sub/SubPage2.vue') },
+    ]
+  },
+  {
+    path: '/auth',
+    component: () => import('layouts/AuthLayout.vue'),
+    children: [
+      { path: 'sign-in', component: () => import('pages/auth/SignIn.vue') },
+      { path: 'sign-up', component: () => import('pages/auth/SignUp.vue') },
     ]
   },
   {
