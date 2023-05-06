@@ -32,6 +32,10 @@ const routes = [
         component: () => import('src/pages/FlexGrid1.vue'),
       },
       {
+        path: 'form-handling',
+        component: () => import('src/pages/FormHandling.vue'),
+      },
+      {
         path: 'profile',
         component: () => import('src/pages/profile/ProfilePage.vue'),
         children: [
