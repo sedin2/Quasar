@@ -4,7 +4,7 @@
       <p class="text-h4">QForm Component</p>
       <q-separator class="q-my-md" />
       
-      <q-form>
+      <q-form class="q-gutter-y-md q-mt-lg">
         <q-input outlined v-model="form.title" label="제목"></q-input>
         <q-input outlined v-model="form.title" label="내용" type="textarea"></q-input>
         <q-select outlined v-model="form.tags" :options="tagOptions" label="태그" emit-value multiple></q-select>
