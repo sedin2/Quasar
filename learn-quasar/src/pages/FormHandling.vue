@@ -23,7 +23,6 @@ const form = ref({
   tags: []
 })
 
-// const tagOptions = ref(['Google', 'Facebook', 'Twitter', 'Apple', 'Oracle'])
 const tagOptions = ref([
   { label: '구글', value: 'Google'},
   { label: '페이스북', value: 'Facebook'},
