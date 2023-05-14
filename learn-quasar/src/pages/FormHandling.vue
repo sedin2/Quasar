@@ -5,11 +5,25 @@
       <q-separator class="q-my-md" />
       
       <q-form class="q-gutter-y-md q-mt-lg">
-        <q-input outlined v-model="form.title" label="제목"></q-input>
-        <q-input outlined v-model="form.title" label="내용" type="textarea"></q-input>
-        <q-select outlined v-model="form.tags" :options="tagOptions" label="태그" emit-value multiple></q-select>
+        <q-input outlined v-model="form.title" label="제목" :rules="[val => !!val || 'Field is required']" />
+        <q-input 
+          outlined 
+          v-model="form.content" 
+          label="내용" 
+          type="textarea" 
+          :rules="[
+            val => !!val || 'Field is required', 
+            (val) => val.length <= 50 || '최대 50자 이내로 입력하세요'
+          ]" 
+        />
+        <q-select outlined v-model="form.tags" :options="tagOptions" label="태그" emit-value multiple />
         {{ form.tags }}
       </q-form>
+      <q-toggle :label="`동의 하시겠습니까?`" v-model="form.accept" />
+      <div>
+        <q-btn label="Submit" type="submit" color="primary" />
+        <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
+      </div>
     </section>
   </q-page>
 </template>
