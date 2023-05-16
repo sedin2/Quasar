@@ -9,40 +9,44 @@ const routes = [
       },
       {
         path: 'typography',
-        component: () => import('src/pages/TypographyView.vue'),
+        component: () => import('pages/TypographyView.vue'),
       },
       {
         path: 'color',
-        component: () => import('src/pages/ColorView.vue'),
+        component: () => import('pages/ColorView.vue'),
       },
       {
         path: 'space',
-        component: () => import('src/pages/SpaceView.vue'),
+        component: () => import('pages/SpaceView.vue'),
       },
       {
         path: 'breakpoint',
-        component: () => import('src/pages/BreakPointView.vue'),
+        component: () => import('pages/BreakPointView.vue'),
       },
       {
         path: 'classes-variables',
-        component: () => import('src/pages/ClassesVariables.vue'),
+        component: () => import('pages/ClassesVariables.vue'),
       },
       {
         path: 'flex-grid-1',
-        component: () => import('src/pages/FlexGrid1.vue'),
+        component: () => import('pages/FlexGrid1.vue'),
       },
       {
         path: 'form-handling',
-        component: () => import('src/pages/FormHandling.vue'),
+        component: () => import('pages/FormHandling.vue'),
       },
       {
         path: 'profile',
-        component: () => import('src/pages/profile/ProfilePage.vue'),
+        component: () => import('pages/profile/ProfilePage.vue'),
         children: [
           { path: '', component: () => import('pages/profile/ProfilePosts.vue') },
           { path: 'saved', component: () => import('pages/profile/ProfileSaved.vue') },
           { path: 'tagged', component: () => import('pages/profile/ProfileTagged.vue') }
         ]
+      },
+      {
+        path: 'quasar-utils',
+        component: () => import('pages/QuasarUtils.vue'),
       },
     ],
   },
