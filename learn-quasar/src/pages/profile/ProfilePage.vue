@@ -39,7 +39,7 @@
     </section>
     <section class="q-my-xl">
       <q-tabs
-      class="q-mb-lg"
+        class="q-mb-lg"
         v-model="tab"
         inline-label
         switch-indicator
@@ -76,7 +76,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const tab = ref('mails');
 </script>

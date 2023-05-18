@@ -11,17 +11,11 @@
           icon="menu"
         />
 
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        <q-toolbar-title> Quasar App </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      class="bg-grey-8"
-    >
+    <q-drawer v-model="leftDrawerOpen" show-if-above class="bg-grey-8">
       <q-list dark>
         <q-item-label header>Essential Links</q-item-label>
         <q-item v-for="{ title, to } in items" :key="title" clickable :to="to">
@@ -43,20 +37,17 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const items = ref([
-  {title: 'Sub Page 1', to: '/sub/sub-page-1'},
-  {title: 'Sub Page 2', to: '/sub/sub-page-2'}
-])
+  { title: 'Sub Page 1', to: '/sub/sub-page-1' },
+  { title: 'Sub Page 2', to: '/sub/sub-page-2' },
+]);
 
-const leftDrawerOpen = ref(false)
+const leftDrawerOpen = ref(false);
 
-function toggleLeftDrawer () {
-  leftDrawerOpen.value = !leftDrawerOpen.value
+function toggleLeftDrawer() {
+  leftDrawerOpen.value = !leftDrawerOpen.value;
 }
-
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

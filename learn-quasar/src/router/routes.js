@@ -39,10 +39,19 @@ const routes = [
         path: 'profile',
         component: () => import('pages/profile/ProfilePage.vue'),
         children: [
-          { path: '', component: () => import('pages/profile/ProfilePosts.vue') },
-          { path: 'saved', component: () => import('pages/profile/ProfileSaved.vue') },
-          { path: 'tagged', component: () => import('pages/profile/ProfileTagged.vue') }
-        ]
+          {
+            path: '',
+            component: () => import('pages/profile/ProfilePosts.vue'),
+          },
+          {
+            path: 'saved',
+            component: () => import('pages/profile/ProfileSaved.vue'),
+          },
+          {
+            path: 'tagged',
+            component: () => import('pages/profile/ProfileTagged.vue'),
+          },
+        ],
       },
       {
         path: 'quasar-utils',
@@ -57,7 +66,7 @@ const routes = [
       { path: '', component: () => import('pages/sub/IndexPage.vue') },
       { path: 'sub-page-1', component: () => import('pages/sub/SubPage1.vue') },
       { path: 'sub-page-2', component: () => import('pages/sub/SubPage2.vue') },
-    ]
+    ],
   },
   {
     path: '/auth',
@@ -65,7 +74,7 @@ const routes = [
     children: [
       { path: 'sign-in', component: () => import('pages/auth/SignIn.vue') },
       { path: 'sign-up', component: () => import('pages/auth/SignUp.vue') },
-    ]
+    ],
   },
   {
     path: '/:catchAll(.*)*',

@@ -14,12 +14,7 @@
         <q-toolbar-title> Quasar App </q-toolbar-title>
 
         <div>
-          <q-btn 
-            stretch 
-            flat 
-            label="Sub Layout" 
-            to="/sub"
-          />
+          <q-btn stretch flat label="Sub Layout" to="/sub" />
           <q-btn
             flat
             round
@@ -31,7 +26,7 @@
         </div>
         <q-btn round size="sm" class="q-ml-md">
           <q-avatar size="42px">
-            <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+            <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
           </q-avatar>
           <q-menu :offset="[0, 10]">
             <q-list style="min-width: 100px">
@@ -120,7 +115,7 @@ const linksList = [
     caption: 'quasar.dev',
     icon: 'school',
     to: '/quasar-utils',
-  }
+  },
 ];
 </script>
 
