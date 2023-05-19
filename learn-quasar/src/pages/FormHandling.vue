@@ -62,6 +62,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useQuasar } from 'quasar';
+
+const $q = useQuasar();
 
 const myForm = ref(null);
 const form = ref({
@@ -96,9 +99,10 @@ const reset = () => {
 const onSubmit = () => {
   if (form.value.accept !== true) {
     alert('동의 해 주세요!');
-  } else {
-    alert('성공~!');
+    return;
   }
+  $q.loading.show();
+  // alert('성공~!');
 };
 
 const onReset = () => {
