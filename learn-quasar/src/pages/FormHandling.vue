@@ -102,6 +102,9 @@ const onSubmit = () => {
     return;
   }
   $q.loading.show();
+  setTimeout(() => {
+    $q.loading.hide();
+  }, 2000);
   // alert('성공~!');
 };
 
