@@ -33,10 +33,10 @@ console.log(langOptions);
 <script setup>
 import { ref, watch } from 'vue';
 import { useQuasar } from 'quasar';
+import { useI18n } from 'vue-i18n';
 
 const $q = useQuasar();
 
-console.log($q.lang.isoName);
 const lang = ref($q.lang.isoName);
 
 watch(lang, val => {
@@ -44,8 +44,11 @@ watch(lang, val => {
   import('../../node_modules/quasar/lang/' + val).then(lang => {
     $q.lang.set(lang.default);
     $q.localStorage.set('lang', val);
+    locale.value = val;
   });
 });
+
+const { locale } = useI18n();
 </script>
 
 <style lang="scss" scoped></style>
