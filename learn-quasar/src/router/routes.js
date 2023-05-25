@@ -81,6 +81,13 @@ const routes = [
     ],
   },
   {
+    path: '/youtube',
+    component: () => import('layouts/youtube/Index.vue'),
+    children: [
+      { path: '', component: () => import('pages/youtube/IndexPage.vue') },
+    ],
+  },
+  {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
   },
